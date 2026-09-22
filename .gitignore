@@ -3,3 +3,5 @@
 *.exe
 gestao_alunos
 GESTAO_ALUNOS
+.vscode
+build
