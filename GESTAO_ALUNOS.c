@@ -7,7 +7,7 @@ struct Aluno {
     char curso[30];
     int idade;
     float N1, N2, N3;
-    
+    float media; 
 };
 
 void cadastrar_aluno( struct Aluno *aluno) {
@@ -31,6 +31,8 @@ void cadastrar_aluno( struct Aluno *aluno) {
     
     printf("Digite a nota 3 do aluno: ");
     scanf("%f", &aluno->N3);
+    
+    aluno->media = (aluno->N1 + aluno->N2 + aluno->N3) / 3.0;
 }
 
 
