@@ -100,6 +100,13 @@ void alterar_aluno(struct Aluno *alunos, int quantidade_alunos) {
     }
 }
 
+void situacaoAluno(struct Aluno *aluno)
+{
+    if(aluno -> media >= 7) printf("Aluno %s foi aprovado\n",aluno ->nome);
+    if(aluno -> media > 3 && aluno -> media < 7) printf("Aluno %s esta de recuperação\n",aluno ->nome);
+    if(aluno -> media <= 3) printf("Aluno %s foi reprovado\n",aluno ->nome);
+}
+
 void exibir_menu(int quantidade_alunos) {
     printf("\n===================================\n");
     printf("    SISTEMA DE GESTAO DE ALUNOS    \n");
@@ -108,7 +115,7 @@ void exibir_menu(int quantidade_alunos) {
     printf("1. Cadastrar aluno\n");
     printf("2. Cadastrar notas (em desenvolvimento)\n");
     printf("3. Calcular media (em desenvolvimento)\n");
-    printf("4. Situacao do aluno (em desenvolvimento)\n");
+    printf("4. Situacao do aluno\n");
     printf("5. Consultar aluno (em desenvolvimento)\n");
     printf("6. Listagem geral (em desenvolvimento)\n");
     printf("7. Alterar dados de um aluno\n");
@@ -174,8 +181,34 @@ int main() {
                 break;
             }
             case 2:
+            printf("\nOpcao %d esta em desenvolvimento pelos outros membros do grupo...\n", escolha);
+            break;
             case 3:
+            printf("\nOpcao %d esta em desenvolvimento pelos outros membros do grupo...\n", escolha);
+            break;
             case 4:
+            if (quantidade_alunos > 0)
+            {
+            char auxMatricula[10];
+            int encontrado = 0;
+            printf("Me informe a matricula do aluno que deseja ver a situação:");
+            scanf("%9s", auxMatricula);
+                for (int i = 0; i < quantidade_alunos; i++)
+                {
+                    if (strcmp(alunos[i].Matricula, auxMatricula) == 0)
+                    {
+                        situacaoAluno(&alunos[i]);
+                        encontrado = 1;
+                        break;
+                    }
+                }
+                if(encontrado == 0) printf("Aluno não encontrado no banco de dados");
+            }
+            else
+            {
+                printf("Nenhum aluno cadastrado no banco de dados");
+            }
+            break;
             case 5:
                 exibir_aluno(alunos, quantidade_alunos);
                 break;
