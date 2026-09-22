@@ -117,6 +117,16 @@ void exibir_menu(int quantidade_alunos) {
     printf("Escolha uma opcao: ");
 }
 
+void exibir_aluno(struct Aluno *aluno){
+    char valor[50];
+    scanf("Escreva o Nome: %s", valor);
+    if(strcmp(valor, aluno->Matricula) || strcmp(valor, aluno->nome)){
+        printf("Matricula do Aluno:%s\n",aluno->Matricula);
+        printf("Nome do Aluno:%s\n",aluno->nome);
+        printf("Curso do Aluno%s\n",aluno->curso);
+        printf("Idade do Aluno:%d\n",aluno->idade);
+    }
+}
 int main() {
     struct Aluno *alunos = NULL;
     int quantidade_alunos = 0;
@@ -148,6 +158,8 @@ int main() {
             case 3:
             case 4:
             case 5:
+                exibir_aluno(alunos);
+                break;
             case 6:
                 printf("\nOpcao %d esta em desenvolvimento pelos outros membros do grupo...\n", escolha);
                 break;
