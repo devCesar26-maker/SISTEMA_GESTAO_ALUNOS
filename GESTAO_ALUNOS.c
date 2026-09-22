@@ -117,14 +117,33 @@ void exibir_menu(int quantidade_alunos) {
     printf("Escolha uma opcao: ");
 }
 
-void exibir_aluno(struct Aluno *aluno){
+void exibir_aluno(struct Aluno *aluno, int quantidade_alunos){
+    if (quantidade_alunos == 0) {
+        printf("\nNenhum aluno cadastrado no sistema.\n");
+        return;
+    }
+
     char valor[50];
-    scanf("Escreva o Nome: %s", valor);
-    if(strcmp(valor, aluno->Matricula) || strcmp(valor, aluno->nome)){
-        printf("Matricula do Aluno:%s\n",aluno->Matricula);
-        printf("Nome do Aluno:%s\n",aluno->nome);
-        printf("Curso do Aluno%s\n",aluno->curso);
-        printf("Idade do Aluno:%d\n",aluno->idade);
+    printf("Digite a matricula para consultar: ");
+    scanf("%s", valor);
+    getchar();
+
+    int encontrado = 0;
+
+    for (int i = 0; i < quantidade_alunos; i++) {
+        if(strcmp(aluno[i].Matricula, valor) == 0){
+            printf("\n--- Dados do Aluno ---\n");
+            printf("Nome: %s\n", aluno[i].nome);
+            printf("Matricula: %s\n", aluno[i].Matricula);
+            printf("Curso: %s\n", aluno[i].curso);
+            printf("Media: %.2f\n", aluno[i].media);
+            encontrado = 1;
+            break;
+        }
+    }
+    
+    if (!encontrado) {
+        printf("Aluno com a matricula '%s' nao encontrado.\n", valor);
     }
 }
 int main() {
@@ -158,7 +177,7 @@ int main() {
             case 3:
             case 4:
             case 5:
-                exibir_aluno(alunos);
+                exibir_aluno(alunos, quantidade_alunos);
                 break;
             case 6:
                 printf("\nOpcao %d esta em desenvolvimento pelos outros membros do grupo...\n", escolha);
