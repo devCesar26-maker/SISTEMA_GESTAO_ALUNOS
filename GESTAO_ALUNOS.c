@@ -354,7 +354,7 @@ void recalcular_medias(struct Aluno *alunos, int quantidade) {
     listar_alunos(alunos, quantidade);
 }
 
-void consultarsituacao(Aluno *alunos, int quantidade) {
+void consultar_situacao(Aluno *alunos, int quantidade) {
     char matricula[TAM_MATRICULA];
     int indice;
 
@@ -379,7 +379,7 @@ void consultarsituacao(Aluno *alunos, int quantidade) {
     printf("---------------------------------------------\n");
 }
 
-void consultar_a(struct Aluno *alunos, int quantidade) {
+void consultar_aluno(struct Aluno *alunos, int quantidade) {
     char busca[TAM_NOME];
     int i;
     int encontrados = 0;
