@@ -354,7 +354,7 @@ void recalcular_medias(struct Aluno *alunos, int quantidade) {
     listar_alunos(alunos, quantidade);
 }
 
-void consultar_sit(struct Aluno *alunos, int quantidade) {
+void consultarsituacao(Aluno *alunos, int quantidade) {
     char matricula[TAM_MATRICULA];
     int indice;
 
