@@ -11,7 +11,7 @@ alunos e suas notas, calcular a média e informar a situação de cada um
 - Otávio Figueredo Alves - @otaviofigueredoalves
 - César de Araújo Oliveira - @devCesar26-maker
 - João Pedro Martins dos Santos - @JPMS2070
-- Livia Maria dos Santos Alves
+- Livia Maria dos Santos Alves - @liviamariasantoss1206-cell
 - Inácio Rodrigues Gonçalves - @itsinacio
 - Daniel Candido Mendes da Silva
 
