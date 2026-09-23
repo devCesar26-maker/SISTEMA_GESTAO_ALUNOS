@@ -13,7 +13,7 @@ alunos e suas notas, calcular a média e informar a situação de cada um
 - João Pedro Martins dos Santos - @JPMS2070
 - Livia Maria dos Santos Alves - @liviamariasantoss1206-cell
 - Inácio Rodrigues Gonçalves - @itsinacio
-- Daniel Candido Mendes da Silva
+- Daniel Candido Mendes da Silva - @dannielMened
 
 ## Descrição do sistema
 
