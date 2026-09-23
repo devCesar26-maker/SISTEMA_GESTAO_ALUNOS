@@ -8,11 +8,11 @@ alunos e suas notas, calcular a média e informar a situação de cada um
 
 ## Integrantes
 
-- Otávio Figueredo Alves
-- César de Araújo Oliveira
-- João Pedro Martins dos Santos
+- Otávio Figueredo Alves - @otaviofigueredoalves
+- César de Araújo Oliveira - @devCesar26-maker
+- João Pedro Martins dos Santos - @JPMS2070
 - Livia Maria dos Santos Alves
-- Inácio Rodrigues Gonçalves
+- Inácio Rodrigues Gonçalves - @itsinacio
 - Daniel Candido Mendes da Silva
 
 ## Descrição do sistema
