@@ -12,6 +12,8 @@ alunos e suas notas, calcular a média e informar a situação de cada um
 - César de Araújo Oliveira
 - João Pedro Martins dos Santos
 - Livia Maria dos Santos Alves
+- Inácio Rodrigues Gonçalves
+- Daniel Candido Mendes da Silva
 
 ## Descrição do sistema
 
